@@ -1,6 +1,7 @@
 a{
   text-decoration: none;
   color: white;
+  line-height: 2.5;
 }
 body{
   background-color: #f7f9fd;
@@ -34,35 +35,43 @@ h3{
   font-size: 1.4rem;
   padding-bottom: 1rem;
 }
-.logo-img{
-  position: absolute;
-  left: 5.5rem;
-  top: 4.5rem;
+i{
+  font-size: 2rem;
+  margin: .5rem;
 }
-
+.site-top{
+  width: 90%;
+  margin: auto;
+  padding-top: 5rem;
+}
+.logo-img{
+  float: left;
+  width: 15rem;
+}
 .top-button{
-  position: absolute;
-  right: 5rem;
-  top: 4rem;
+  float: right;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0.1rem;
   border: none;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  font-family: 'Open Sans', sans-serif;
   color: #9a52ff;
-  font-size: 0.9rem;
+  font-size: 100%;
   background: #f7f9fd;
-  padding: 1rem 4.5rem;
+  padding: 1rem 5rem;
   text-decoration: none;
   cursor: pointer;
   font-weight: 500;
+}
+.site-top::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 .top-button:hover{
   background-color: #9a52ff;
   color: #f7f9fd;
 }
-
 .wrapper{
   position:absolute;
   width:100%;
@@ -78,7 +87,7 @@ h3{
   width: 95rem;
   background: linear-gradient(to left, hsl(265, 100%, 66%) 0%, hsl(322, 100%, 66%) 100%);
   position: absolute;
-  left:46rem;
+  left: 46rem;
   top: -41rem;
   border-radius: 7%;
   z-index: -1;
@@ -114,11 +123,10 @@ h3{
   border-radius: 0.1rem;
   border: none;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  font-family: 'Open Sans', sans-serif;
   color: #f7f9fd;
-  font-size: 0.9rem;
+  font-size: 100%;
   background: #ff52bf;
-  padding: 1rem 4.5rem;
+  padding: 3% 8%;
   text-decoration: none;
   cursor: pointer;
   font-weight: 500;
@@ -161,35 +169,59 @@ h3{
   padding-top: 5rem;
   background-color: #00252e;
   text-align: left;
-  height: 20rem;
+  /*height: 20rem;*/
+}
+.white{
+  color: white;
 }
 .logo-light{
   padding-left: 5rem;
+  padding-bottom: 2rem;
   width: 15rem;
   display: block;
 }
 .social{
   height: 5rem;
   position: absolute;
-  margin: 3rem 5rem;
+  padding-left: 5rem;
 }
-i{
-  font-size: 2rem;
-  margin: .5rem;
-}
-.menu-bottom-1{
 
-  left: 15rem;
+.menu-bottom-1{
+  position: absolute;
+  left: 35rem;
 
 }
 .menu-bottom-2{
-
   position: absolute;
-  left: 40rem;
+  left: 45rem;
 
 }
 .subscribe{
+  width: 33.33%;
+  padding-top: 2rem;
+  float: right;
+  display: block;
+}
+.attribution{
+  display: block;
+}
 
-  position: absolute;
-  right: 15rem;
+@media screen and (max-width: 600px) {
+  .logo-img{
+    width: 40%;
+  }
+  .top-button{
+    padding: 3% 15%;
+  }
+  .colorbox{
+    left: 27rem;
+  }
+  .site-middle{
+    padding-top: 5rem;
+  }
+  .mockups{
+    margin: auto;
+    width: 90%;
+  }
+
 }
