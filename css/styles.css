@@ -213,6 +213,11 @@ i{
   float: left;
   color: white;
 }
+.colc{
+  width: 30%;
+  float: left;
+  color: white;
+}
 .coll{
   width: 50%;
   float: left;
@@ -231,25 +236,94 @@ i{
   border-radius: 5px;
   border: none;
 }
-
+.bottom-button{
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0.1rem;
+  border: none;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  color: #f7f9fd;
+  font-size: 100%;
+  background: #ff52bf;
+  padding: 1rem 5rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+.bottom-button:hover{
+  background-color: #f7f9fd;
+  color: #ff52bf;
+}
 
 @media screen and (max-width: 600px) {
+  .site-top{
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+  }
   .logo-img{
-    width: 40%;
+    width: 35%;
   }
   .top-button{
-    padding: 3% 15%;
+    padding: 2% 10%;
   }
   .colorbox{
     left: 27rem;
+    top: -30rem;
+    transform: rotate(60deg);
   }
   .site-middle{
     padding-top: 5rem;
   }
   .mockups{
-    width: 90%;
+    width: 85%;
   }
-
+  .users-text{
+    padding-top: 7rem;
+    text-align: center;
+  }
+  .users{
+    padding-top: 13rem;
+  }
+  .try_it_free{
+    margin: 7rem auto;
+    padding: 2rem 2rem 3rem;
+    width: 70%;
+  }
+  h3{
+    line-height: 1.5;
+    font-size: .8rem;
+  }
+  .logo-light{
+    width: 12rem;
+    margin: auto;
+    padding-bottom: 5rem;
+  }
+  .col{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 37rem;
+  }
+  .colb{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 7rem;
+  }
+  .colc{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 4rem;
+  }
+  .coll{
+    width: 100%;
+    text-align: left;
+  }
+  .bottom-button{
+    width: 100%;
+  }
 
 }
 @media screen and (max-width: 1000px) {
