@@ -15,10 +15,11 @@ p{
   color: hsl(208, 11%, 55%);
   font-weight: 400;
   padding-bottom: 2rem;
+  margin: 0 auto;
 }
 h1{
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   color: hsl(192, 100%, 9%);
 }
 h2{
@@ -26,6 +27,7 @@ h2{
   font-weight: 600;
   color: hsl(192, 100%, 9%);
   font-size: 1.5rem;
+  margin-top: 0;
 }
 h3{
   font-family: 'Open Sans', sans-serif;
@@ -106,7 +108,7 @@ i{
   z-index: -2;
 }
 .site-middle{
-  padding-top: 15rem;
+  padding-top: 5rem;
   margin: auto;
 }
 .mockups{
@@ -139,7 +141,7 @@ i{
   padding-top: 30rem;
   width: 85%;
   margin: auto;
-  text-align: left;
+
 }
 .users::after{
   content: "";
@@ -149,61 +151,84 @@ i{
 .users-img{
   width: 45%;
   float: left;
-  padding-right: 2rem;
-  padding-top: 2rem;
 }
 .users-text{
-  width: 50%;
+  width: 45%;
   float: right;
+  padding-left: 5rem;
+  text-align: left;
 }
 .try_it_free{
   background-color: white;
   margin: 15rem auto;
   width: 55%;
-  padding: 4rem 0 6rem;
+  padding: 4rem 4rem 6rem;
   box-shadow: 0px 0px 50px #ceddef;
   border-radius: .3rem;
 }
 .site-bottom{
-  color: white;
-  padding-top: 5rem;
   background-color: #00252e;
   text-align: left;
-  /*height: 20rem;*/
 }
 .white{
   color: white;
 }
-.logo-light{
-  padding-left: 5rem;
-  padding-bottom: 2rem;
-  width: 15rem;
-  display: block;
-}
+
 .social{
   height: 5rem;
   position: absolute;
   padding-left: 5rem;
 }
 
-.menu-bottom-1{
-  position: absolute;
-  left: 35rem;
-
-}
-.menu-bottom-2{
-  position: absolute;
-  left: 45rem;
-
-}
 .subscribe{
   width: 33.33%;
   padding-top: 2rem;
   float: right;
   display: block;
 }
-.attribution{
+.bottomA{
+  margin: 0 auto;
+  width: 85%;
+}
+.logo-light{
+  padding: 5rem 0 2rem;
+  width: 15rem;
   display: block;
+}
+.bottomB{
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 85%;
+}
+.bottomB:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.bottomC{
+  width: 85%;
+  margin: 0 auto;
+  background-color: #00252e;
+}
+.padb{
+  padding-bottom: 0;
+  padding-top: 7rem;
+  font-size: .7rem;
+  text-align: center;
+}
+.col{
+  width: 40%;
+  float: left;
+  color: white;
+}
+.colb{
+  width: 30%;
+  float: left;
+  color: white;
+}
+.coll{
+  width: 50%;
+  float: left;
 }
 
 @media screen and (max-width: 600px) {
@@ -223,4 +248,15 @@ i{
     width: 90%;
   }
 
+
+}
+@media screen and (max-width: 1000px) {
+  .users-img{
+    width: 100%;
+
+  }
+  .users-text{
+    width: 100%;
+
+  }
 }
